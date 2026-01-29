@@ -6,6 +6,7 @@
 
   --text-main: #222;
   --text-muted: #666;
+  --text-home: #f7f7f7;
 
   --primary: rgb(100, 30, 165);
   --border-soft: #eaeaea;
@@ -33,6 +34,7 @@ body.dark{
 
   --text-main: #eaeaf0;
   --text-muted: #a1a1b3;
+  --text-home:  #a1a1b3;
 
   --border-soft: #26263a;
 }
@@ -41,6 +43,15 @@ header{
   padding: 20px 0;
   background: var(--bg-main);
   backdrop-filter: blur(12px);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container{
@@ -110,13 +121,17 @@ nav.desktop li a i{
   font-size: 20px;
 }
 
-.theme-toggle{
-  position: absolute;
-  right: 20px;
-  top: 22px;
-  font-size: 22px;
-  color: var(--primary);
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
   cursor: pointer;
+  color: #6a00ff; 
+}
+
+.menu-toggle {
+  display: none;
+  color: #6a00ff; 
 }
 
 /* home */
@@ -139,7 +154,7 @@ nav.desktop li a i{
 
 .home p{
   margin-top: 10px;
-  color: #fff;
+  color: var(--text-home);
   font-size: 20px;
 }
 
@@ -400,7 +415,7 @@ footer p a{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
   h2{
     font-size: 32px !important;
   }
@@ -416,7 +431,6 @@ footer p a{
   
   .menu-toggle{
     display: block;
-    text-align: right;
   }
   nav.mobile{
     display: none;
