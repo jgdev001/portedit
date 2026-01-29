@@ -59,7 +59,7 @@ header{
 
 nav.mobile{
   display: none;
-  background: #fff;
+  background:  var(--bg-card);
   padding: 20px 0;
 }
 
@@ -413,6 +413,7 @@ footer p a{
     nav.desktop{
     display: none;
   }
+  
   .menu-toggle{
     display: block;
     text-align: right;
