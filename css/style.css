@@ -24,8 +24,30 @@ header{
 }
 
 /* navbar */
+.menu-toggle{
+  display: none;
+  font-size: 26px;
+  color: rgb(100, 30, 165);
+  cursor: pointer;
+}
+
 nav.mobile{
   display: none;
+  background: #fff;
+  padding: 20px 0;
+}
+
+nav.mobile ul{
+  list-style: none;
+  text-align: center;
+}
+
+nav.mobile ul li a{
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  color: rgb(100, 30, 165);
+  text-decoration: none;
 }
 
 nav.desktop{
@@ -349,8 +371,12 @@ footer p a{
     nav.desktop{
     display: none;
   }
-  nav.mobile{
+  .menu-toggle{
     display: block;
+    text-align: right;
+  }
+  nav.mobile{
+    display: none;
   }
   nav.mobile ul{
     list-style: none;
