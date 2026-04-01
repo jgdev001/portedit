@@ -60,6 +60,50 @@ header{
   max-width: 1280px;
 }
 
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  background: #0f0f0f;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,0,0,.6);
+  z-index: 9999;
+}
+
+.chat-header {
+  background: #7c3aed;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chat-body {
+  height: 240px;
+  padding: 10px;
+  overflow-y: auto;
+  color: #fff;
+}
+
+.bot, .user {
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  max-width: 85%;
+}
+
+.bot {
+  background: #1c1c1c;
+}
+
+.user {
+  background: #7c3aed;
+  margin-left: auto;
+}
+
+
 /* navbar */
 .menu-toggle{
   display: none;
